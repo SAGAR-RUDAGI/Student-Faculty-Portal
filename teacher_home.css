@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+}
+
+.navbar{
+  background-color: rgb(26, 26, 26);
+  /* height: 50px; */
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+.link{
+  margin-top: 5px;
+}
+
+.navlist li{
+  display: inline-block;
+  padding: 10px;
+  padding-bottom: 15px;
+  margin-top: 4px;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-family: Montserrat;
+  text-align: center;
+  display: block;
+}
+
+.navlist li:hover ul{
+  display:block;
+}
+
+.btn{
+  background-color: rgb(26, 26, 26);
+  text-decoration: none;
+  font-family: Montserrat;
+  color: white;
+  border: 1px solid #338033;
+  padding: 7px;
+  margin-top: -4px;
+}
+
+.btn:hover{
+  cursor: pointer;
+  border: 1px solid rgb(26, 26, 26);
+}
+
+.btn:focus{
+  outline: none;
+  border: none;
+  background-color: #338033;
+}
+
+.pre-elements{
+  margin-top: 20px;
+}
+
+#default-table{
+  width: 75%;
+  border-collapse: collapse;
+  /* border: solid thick; */
+  margin-left: auto;
+  margin-right: auto;
+}
+th, td{
+  padding: 8px;
+}
+/* th{
+  border: solid thick;
+} */
+
+/* tr:nth-child(even){background-color: #f2f2f2;z-index: 1;} */
+
+/* td{
+  border: solid thick;
+} */
+
+.main-headings th{
+  width: 33%;
+}
+
+/* .sub-headings th{
+  width: 50;
+} */
+
+#default-table input{
+  width: 80%;
+  text-align: center;
+  margin-left: 15px;
+  border: none;
+}
+
+.pre-elements{
+  padding-left: 450px;
+}
+
+#studentName{
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-right: 80px;
+  padding: 10px;
+  text-align: center;
+}
+
+#studentUsn{
+  margin-left: 665px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 10px;
+  text-align: center;
+}
+
+#studentSearch{
+  margin-left: 665px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 10px;
+  text-align: center;
+}
+
+#cie, #see, #attended, #total{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-right: 80px;
+  padding: 10px;
+  text-align: center;
+}
+
+#myBtn{
+  visibility: hidden;
+}
+
+#tableButton{
+  padding: 10px;
+  margin-top: 50px;
+  margin-left: 730px;
+}
+
+.studSearch{
+  text-align: center;
+}
+
+#searchBtn{
+  background-color: white;
+  text-decoration: none;
+  font-family: Montserrat;
+  color: black;
+  font-weight: 700;
+  border: 3px solid #338033;
+  padding: 7px;
+  margin-top: -4px;
+  margin-left: 730px;
+}
+
+#searchBtn:hover{
+  cursor: pointer;
+  border: 3px solid blue;
+}
+
+#searchBtn:focus{
+  outline: none;
+  border: 3px solid black;
+  background-color: #338033;
+}
+
+.subject{
+  margin-left: 600px;
+}
+
+.logout{
+  float: right;
+  padding-right: 10px;
+  display:block;
+  }
+
+.logout ul{
+  padding-top:20px;
+  display:none;
+}

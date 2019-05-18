@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Info|Teacher</title>
+  <link rel="stylesheet" type="text/css" href="teacher_home.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script type="text/javascript">
+
+  function validateUSN(usn)
+  {
+    var usnFormat=/[1][B][M][0-9][0-9][A-Z][A-Z][0-9][0-9][0-9]/i;
+    if(usn.value.match(usnFormat))
+    {
+      return true;
+    }
+    else
+    {
+      alert("Re-enter USN");
+
+    }
+  }
+
+  function validateName(name)
+  {
+    var pattern=/[A-Z]+/i;
+    if(name.value.match(pattern))
+    {}
+    else
+    {
+      alert("Enter a valid name");
+    }
+  }
+function validateALL()
+{
+  var cie=document.getElementById('cie');
+  var see=document.getElementById('see');
+  var att=document.getElementById('attended');
+  var tot=document.getElementById('total');
+
+  if(validateNumber(total))
+  {
+    if(validateAttended(att))
+    {
+      if(validateCIE(cie))
+      {
+        if(validateSEE(see))
+        {
+
+        }
+      }
+    }
+  }
+
+}
+
+
+function validateNumber(dom)
+{
+  var format=/\d+/;
+  if(!dom.value.match(format))
+  {
+    alert("Please Enter a number");
+    return false;
+  }return true;
+}
+
+function validateCIE(dom)
+{
+  validateNumber(dom);
+  if(!(dom.value<=50))
+  {
+    alert("CIE marks entered are greater than 50");
+
+    return false;
+  }return true;
+}
+function validateSEE(dom)
+{
+  validateNumber(dom);
+  if(!(dom.value<=100))
+  {
+    alert("SEE marks entered are greater than 100");
+
+    return false;
+  }return true;
+}
+function validateAttended(dom)
+{
+  validateNumber(dom);
+  if(!(dom.value<=document.getElementById('total').value))
+  {
+    alert("Attendance entered is invalid");
+
+    return false;
+  }return true;
+}
+
+  </script>
+</head>
+<body>
+  <nav class="navbar">
+        <ul class="navlist">
+           <li><a href="" class="link">HOME</a></li>
+           <li><a href="" class="link">UPDATES</a></li>
+           <li><a href="about.html" class="link">ABOUT</a></li>
+           <li class="logout"><a href="login1.html" class="btn">LOGOUT</a></li>
+        </ul>
+  </nav>
+  <div class="whole-page">
+  <div class="pre-elements" style="margin-left:100px;">
+ </div>
+  <div class="main-elements"><br>
+  <form action="teacher.php" method="post">
+    <div class="subject" style="margin-left:600px;">
+      <label for="">Subject:</label>
+      <select name="subj" id="">
+        <option value="COA" selected="selected">COA</option>
+        <option value="DMS">DMS</option>
+        <option value="WP">WP</option>
+        <option value="CPP">CPP</option>
+        <option value="DS">DS</option>
+      </select></div>
+      &nbsp;&nbsp;&nbsp;
+    <br>
+    <input type="text" placeholder="Student USN" name="usnStudent" id="studentUsn" onfocusout="validateUSN(this)" autocomplete="off" style="margin-left:40%; padding: 10px; text-align: center;"><br>
+    <input type="text" placeholder="Student Name" name="studentName" id="studentName" onfocusout="validateName(this)" autocomplete="off">
+
+    <input type="text" placeholder="Total" name="total" id="total" autocomplete="off">
+    <input type="text" placeholder="Attended" name="attended" id="attended"  autocomplete="off">
+    <input type="text" placeholder="CIE" name="cie" id="cie" autocomplete="off">
+    <input type="text" placeholder="SEE" name="see" id="see" onfocusout="validateALL() "autocomplete="off">
+    <input type="submit" id="myBtn" onclick="addRow();"><br>
+  </form>
+    <table border="1" id="default-table">
+      <tr class="main-headings">
+        <th rowspan="2">STUDENT</th>
+        <th colspan="2">ATTENDENCE</th>
+        <th colspan="2">MARKS</th>
+      </tr>
+      <tr class="sub-headings">
+        <th>ATTENDED</th>
+        <th>TOTAL</th>
+        <th>CIE</th>
+        <th>SEE</th>
+      </tr>
+    </table>
+  </div></div>
+  <br><br>
+  <div class="searchParty">
+  <p class="studSearch">Search Details : </p>
+  <form action="teacherSearch.php" method="post">
+    <input type="text" placeholder="Student Name" name="studentSearch" id="studentSearch" autocomplete="off"/>
+    <div class="subject" style="margin-left:700px;">
+      <label for="">Subject:</label>
+      <select name="subj" id="">
+        <option value="COA" selected="selected">COA</option>
+        <option value="DMS">DMS</option>
+        <option value="WP">WP</option>
+        <option value="CPP">CPP</option>
+        <option value="DS">DS</option>
+      </select></div><br><br>
+      <input type="submit" id="searchBtn"/><br><br>
+  </form></div>
+  <script  type="text/javascript" src="teacher_home.js"></script>
+</body>
+</html>

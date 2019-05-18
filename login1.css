@@ -1,0 +1,314 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Montserrat;
+}
+
+.jumbotron{
+  background-color: #e9ecef;
+  height: 130px;
+}
+
+.jumbotron .text{
+  top: 50%;
+  left: 50%;
+  transform: translate(25%,30%);
+  font-family: Montserrat;
+}
+
+.title{
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.subtitle{
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.navbar{
+  background-color: rgb(26, 26, 26);
+  /* height: 50px; */
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+.link{
+  margin-top: 5px;
+}
+
+.current{
+
+}
+
+
+/* .link:hover,
+.link:focus{
+  background-color: #338033;
+  margin-top: auto;
+  margin-top: auto;
+} */
+
+.navlist li{
+  display: inline-block;
+  padding: 10px;
+  margin-top: 4px;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-family: Montserrat;
+  text-align: center;
+  display: block;
+}
+
+.login{
+  float: right;
+  padding-right: 10px;
+  display:block;
+  }
+
+.login ul{
+  padding-top:20px;
+  display:none;
+}
+
+.navlist li:hover ul{
+  display:block;
+}
+
+.signup{
+  float: right;
+  display:block;
+}
+
+.signup ul{
+  padding-top:20px;
+  display:none;
+}
+
+.navlist li:hover ul{
+  display:block;
+}
+
+.btn{
+  background-color: rgb(26, 26, 26);
+  text-decoration: none;
+  font-family: Montserrat;
+  color: white;
+  border: 1px solid #338033;
+  padding: 7px;
+  margin-top: -4px;
+}
+
+.btn:hover{
+  cursor: pointer;
+  border: 1px solid rgb(26, 26, 26);
+}
+
+.btn:focus{
+  outline: none;
+  border: none;
+  background-color: #338033;
+}
+
+.box
+{
+width:100%;
+height:80%;
+background-image:url(back.jpg);
+background-size:cover;
+position:absolute;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input{
+  border-radius: 10px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    /* border-radius: 10px; */
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.signupbtn{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  /* border-radius: 10px; */
+  cursor: pointer;
+  width: 100%;
+}
+
+.signupbtn:hover{
+  opacity: 0.8;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+    background-size: 100px;
+    padding: 40px;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+span a{
+  color: black;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #22A7F0;
+    /* opacity: 0.5; */
+    margin: 0 auto 0 auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.header{
+  margin-bottom: 10px;
+}
+
+.first{
+  margin-bottom: 20px;
+  background-color: black;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+.image{
+  position: fixed;
+  width: 100%;
+  height: 568px;
+  background-size: cover;
+}
+
+.about_container{
+  background-color: #3333ff;
+  height: 400px;
+  color: white;
+  opacity: 0.9;
+}
+
+.contact{
+  background-color: black;
+  height: 300px;
+  color: white;
+}
+
+.one{
+  text-align: center;
+  position: relative;
+  top: 30%;
+}
+
+.one h3{
+  text-decoration: underline;
+}
+
+.contactTable{
+  position: relative;
+  top: 20%;
+  left: 15%;
+  text-align: center;
+}
+
+.contactTable h2{
+  color: #3333ff;
+}
+
+.submitLecturer{
+  display: none;
+}

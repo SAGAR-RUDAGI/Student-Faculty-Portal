@@ -1,0 +1,15 @@
+.link{
+  margin-bottom: 2px;
+}
+
+.update{
+  background-color: #3333ff;
+  height:700px;
+  text-align: center;
+}
+
+.updateTextCenter{
+  position: absolute;
+  top: 45%;
+  left: 33%;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About</title>
+  <link rel="stylesheet" type="text/css" href="login1.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+        <ul class="navlist">
+           <li><a href="" class="link">HOME</a></li>
+           <li><a href="" class="link">UPDATES</a></li>
+           <li><a href="" class="link" style="color:#3333ff">ABOUT</a></li>
+
+<!--Login Modal-->
+           <li class="login"><a href="" class="btn">LOGIN</a>
+             <ul><button type="button" class="btn" onclick="document.getElementById('id01').style.display='block'">LECTURER</button>
+             <div id="id01" class="modal">
+              <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <img src="http://tgexcise.nic.in/microbrewery/images/img_avatar.png" alt="Avatar" class="avatar">
+                  <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                  <label for="uname"><b>E.ID</b></label>
+                  <input type="text" placeholder="Enter E.ID" name="eId" required>
+
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+
+                  <button type="submit" class="loginbtn">Login</button>
+                  <label><input type="checkbox" checked="checked" name="remember">Remember me</label>
+                </div>
+
+                <div class="container" style="background-color:#22A7F0">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+            </div>
+            <button type="button" class="btn" onclick="document.getElementById('id02').style.display='block'">STUDENT</button>
+            <div id="id02" class="modal">
+              <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close">&times;</span>
+                  <img src="http://tgexcise.nic.in/microbrewery/images/img_avatar.png" alt="Avatar" class="avatar">
+                  <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+                <div class="container">
+                  <label for="eId"><b>USN</b></label>
+                  <input type="text" placeholder="Enter USN" name="usn" required><br/><br/>
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                  <button type="submit" class="loginbtn">Login</button>
+                  <label><input type="checkbox" checked="checked" name="remember">Remember me</label>
+                </div>
+
+                <div class="container" style="background-color:#22A7F0">
+                  <button type="button" onclick="document.getElementById ('id02').style.display='none'"  class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a  href="#">password?</a></span>
+                </div>
+              </form>
+            </div></ul></li>
+
+
+          <!--Sign up modal-->
+           <li class="signup"><a href="" class="btn">SIGNUP</a>
+           <ul><button type="button" class="btn"  onclick="document.getElementById('id03').style.display='block'">LECTURER</button>
+              <div id="id03" class="modal">
+                <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close">&times;</span>
+                <form class="modal-content animate" action="/action_page.php">
+                  <div class="container">
+                    <h1 class="header">Sign Up</h1>
+                    <p class="header">Please fill in this form to create an account.</p>
+                    <hr class="first">
+                    <label for="eId"><b>E.ID</b></label>
+                    <input type="text" placeholder="Enter E.ID" name="eId" required>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+
+                    <div class="clearfix">
+                      <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+                      <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <button type="button" class="btn" onclick="document.getElementById('id04').style.display='block'">
+               STUDENT</button>
+               <div id="id04" class="modal">
+                 <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close">&times;</span>
+                 <form class="modal-content animate" action="/action_page.php">
+                   <div class="container">
+                     <h1 class="header">Sign Up</h1>
+                     <p class="header">Please fill in this form to create an account.</p>
+                     <hr class="first">
+                     <label for="usn"><b>USN</b></label>
+                     <input type="text" placeholder="Enter USN" name="usn" required>
+
+                     <label for="email"><b>Email</b></label>
+                     <input type="text" placeholder="Enter Email" name="email" required>
+
+                     <label for="psw"><b>Password</b></label>
+                     <input type="password" placeholder="Enter Password" name="psw" required>
+
+                     <label for="psw-repeat"><b>Repeat Password</b></label>
+                     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                     <label>
+                       <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                     </label>
+
+                     <div class="clearfix">
+                       <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn">Cancel</button>
+                       <button type="submit" class="signupbtn">Sign Up</button>
+                     </div>
+                   </div>
+                 </form>
+               </div>
+            </ul>
+          </li>
+        </ul>
+  </nav>
+  <div class="about_container">
+    <div class="one">
+      <h3>ABOUT WEBSITE</h3>
+      <h4><pre>A KEEP IT SIMPLE solution to make tracking of marks and attendence easy.
+A comphrehensive way which allows you to keep track of attendence and
+marks in a simple and efficient manner.</pre></h4>
+    </div>
+    <div class="two">
+
+    </div>
+
+  </div>
+  <div class="contact">
+    <table class="contactTable" border="0" cellspacing="50">
+      <tr>
+        <th><pre><h2>ROHINI WADI</h2>
+          <h4>rohiniwadi@gmail.com</h4></pre></th>
+        <th><pre><h2>NAGAMMA</h2>
+        <h4>nagammaseegi1999@gmail.com</h4></pre></th>
+        <th><pre><h2>ROMIL K BALAR</h2>
+        <h4>romilbalar100@gmail.com</h4></pre></th>
+        <th><pre><h2>SAGAR RUDAGI</h2>
+        <h4>sagarrudagi@gmail.com</h4></pre></th>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
